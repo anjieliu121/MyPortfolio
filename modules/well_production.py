@@ -52,5 +52,5 @@ def well_server(input: Inputs, output: Outputs, session: Session):
             height="800",
             width="1000",
             frameborder="no",
-            src="/Users/anjieliu/Documents/MyHackathons/MyPortfolio/www/DRAFT_well_production.pdf",
+            src="https://drive.google.com/file/d/1Pg1gobIy0i2OVwnY87LIIuUK5miDwqSL/preview" ,
         )

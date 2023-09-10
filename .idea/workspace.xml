@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8621c10e-ccbf-41d0-9b26-ef0ec84a701a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/well_production.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/description.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/description.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/well_production.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/well_production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/cosmology_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/DRAFT_well_production.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694293787828</updated>
       <workItem from="1694293791010" duration="26322000" />
-      <workItem from="1694357915680" duration="5068000" />
+      <workItem from="1694357915680" duration="5712000" />
     </task>
     <servers />
   </component>
