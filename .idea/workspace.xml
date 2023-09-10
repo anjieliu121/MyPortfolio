@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8621c10e-ccbf-41d0-9b26-ef0ec84a701a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsconnect-python/MyPortfolio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/me.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/me.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rsconnect-python/MyPortfolio.json" beforeDir="false" afterPath="$PROJECT_DIR$/rsconnect-python/MyPortfolio.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/description.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/description.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +132,7 @@
       <workItem from="1694293791010" duration="26322000" />
       <workItem from="1694357915680" duration="8594000" />
       <workItem from="1694367960971" duration="1796000" />
-      <workItem from="1694371536643" duration="9932000" />
+      <workItem from="1694371536643" duration="12413000" />
     </task>
     <servers />
   </component>

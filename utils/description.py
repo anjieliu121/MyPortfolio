@@ -114,7 +114,7 @@ house_about_text = TagList(
         """
         This is a 
         """,
-        tags.a("public interactive dashboard", href=("https://racial-disparity-index-tool.streamlit.app/")),
+        tags.a("public interactive dashboard", href=("https://racial-disparity-index-tool.streamlit.app/"), target="_blank"),
         """
          exploring the individuals' socioeconomic characteristics and their likelihood of homeownership.
         """,
@@ -198,11 +198,11 @@ well_dataset_information = TagList(
         """
         Check out the 
         """,
-        tags.a("draft", href=("https://drive.google.com/file/d/1Pg1gobIy0i2OVwnY87LIIuUK5miDwqSL/view?usp=sharing")),
+        tags.a("draft", href=("https://drive.google.com/file/d/1Pg1gobIy0i2OVwnY87LIIuUK5miDwqSL/view?usp=sharing"), target="_blank"),
         """
         that will soon be submitted to 
         """,
-        tags.a("arXiv", href=("https://arxiv.org")),
+        tags.a("arXiv", href=("https://arxiv.org"), target="_blank"),
 
         style="""
         text-align: left;

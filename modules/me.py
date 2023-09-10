@@ -46,6 +46,6 @@ def me_server(input: Inputs, output: Outputs, session: Session):
     @render.image
     def smiley_img():
         dir = Path(__file__).resolve().parent
-        img: ImgData = {"src": "/Users/anjieliu/Documents/MyHackathons/MyPortfolio/www/smiley.png", "width": "350", "height": "350"}
+        img: ImgData = {"src": "www/smiley.png", "width": "350", "height": "350"}
         return img
 
