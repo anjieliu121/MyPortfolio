@@ -4,8 +4,7 @@ from shiny import App, Inputs, Outputs, Session, reactive, ui
 from shiny.types import NavSetArg
 
 from utils.description import info_modal
-from modules import cosmology, sustainability, housing, well_production, real_estate
-
+from modules import cosmology, sustainability, housing, well_production, real_estate, me
 
 
 def nav_controls(prefix: str) -> List[NavSetArg]:
@@ -16,7 +15,7 @@ def nav_controls(prefix: str) -> List[NavSetArg]:
         ui.nav("Well Production", well_production.well_ui(id="well")),
         ui.nav("Housing", housing.house_ui(id="house")),
         ui.nav("Real Estate", real_estate.real_ui(id="real")),
-        #ui.nav("WHO AM I?", tab_f_content()),
+        ui.nav("WHO AM I?", me.me_ui(id="who")),
 
         ui.nav_spacer(),
 
@@ -55,15 +54,14 @@ app_ui = ui.div(
                 """
             ),
         ),
-        position = "fixed-top",
+        position="fixed-top",
 
     ),
 
 )
 
 
-
-def server(input: Inputs, output: Outputs, session: Session):
+def app_server(input: Inputs, output: Outputs, session: Session):
     info_modal()
 
     @reactive.Effect
@@ -76,5 +74,7 @@ def server(input: Inputs, output: Outputs, session: Session):
     housing.house_server("house")
     well_production.well_server("well")
     real_estate.real_server("real")
+    me.me_server("who")
 
-app = App(app_ui, server)
+
+app = App(app_ui, app_server)

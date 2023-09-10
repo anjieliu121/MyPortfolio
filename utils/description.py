@@ -257,6 +257,39 @@ real_dataset_information = TagList(
         ),
     ),
 )
+
+
+########################################################################################################################
+# me
+########################################################################################################################
+me_about_text = TagList(
+    tags.br(),
+    tags.br(),
+    tags.p(
+        """
+        After a year of exploring different topics and tools outside of school, 
+        I know my passion lies in data science. My love motivates me to learn vastly
+        different fields ranging from petroleum industry to cosmology that are 
+        outside of my comfort zone, 
+        to start building dashboards using tools like Shiny and Streamlit from scratch, 
+        and to constantly search for new things I could learn. 
+        I might not be the person with the best skill sets, but I am eager to learn,
+        to strive, and to thrive.
+        """
+    ),
+    tags.hr(),
+    tags.p(
+        """
+        email: anjie.liu@utexas.edu
+        """
+    ),
+    tags.hr(),
+    tags.p(
+        """
+        I would always be brightened up by this smiley emoji, and I hope you do too :)
+        """
+    )
+)
 def info_modal():
     modal_show(
         modal(
