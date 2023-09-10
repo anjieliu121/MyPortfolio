@@ -11,7 +11,8 @@ cosmo_about_text = TagList(
     tags.p(
         """
         This is a visual demonstration of the research on investigating the 
-        significance of properties of gas profiles of dark matter halos across the scales.
+        significance of properties of gas profiles of dark matter halos across the scales
+        with the aid of statistical and machine learning models.
         """,
         style="""
         text-align: left;
@@ -113,7 +114,10 @@ house_about_text = TagList(
         """
         This is a 
         """,
-        tags.a("public interactive dashboard", href=("https://racial-disparity-index-tool.streamlit.app/")),
+        tags.a("public interactive dashboard", href=("https://racial-disparity-index-tool.streamlit.app/")),tags.a("public interactive dashboard", href=("https://racial-disparity-index-tool.streamlit.app/")),
+        """
+         exploring the individuals' socioeconomic characteristics and their likelihood of homeownership.
+        """,
         """
          exploring the individuals' socioeconomic characteristics and their likelihood of homeownership.
         """,
@@ -147,6 +151,68 @@ house_dataset_information = TagList(
         I maintained the dashboard during the summer of 2023.
         """
     )
+)
+
+
+########################################################################################################################
+# Well Production
+########################################################################################################################
+well_about_text = TagList(
+    tags.br(),
+    tags.br(),
+    tags.h5("About", style="font-weight: bold;"),
+    tags.p(
+        """
+        This is a demonstration of the research on optimizing completion's sequence of well production
+        using tuned machine learning models.
+        """,
+        style="""
+        text-align: left;
+        word-break:break-word;
+        hyphens: auto;
+        """,
+    ),
+)
+
+well_dataset_information = TagList(
+    tags.h5("Data Description", style="font-weight: bold;"),
+    tags.p(
+        """
+        The dataset is provided by ConocoPhillips.
+        """,
+        style="""
+        text-align: left;
+        word-break:break-word;
+        hyphens: auto;
+        """,
+    ),
+    tags.hr(),
+
+    tags.h5("Data Size", style="font-weight: bold;"),
+    tags.ul(
+        tags.li(
+            tags.p("""10857 wells * 22 properties"""),
+        ),
+    ),
+    tags.hr(),
+
+    tags.h5("Paper", style="font-weight: bold;"),
+    tags.p(
+        """
+        Check out the 
+        """,
+        tags.a("draft", href=("https://drive.google.com/file/d/1Pg1gobIy0i2OVwnY87LIIuUK5miDwqSL/view?usp=sharing")),
+        """
+        that will soon be submitted to 
+        """,
+        tags.a("arXiv", href=("https://arxiv.org")),
+
+        style="""
+        text-align: left;
+        word-break:break-word;
+        hyphens: auto;
+        """,
+    ),
 )
 def info_modal():
     modal_show(

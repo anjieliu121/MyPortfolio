@@ -4,7 +4,7 @@ from shiny import App, Inputs, Outputs, Session, reactive, ui
 from shiny.types import NavSetArg
 
 from utils.description import info_modal
-from modules import cosmology, sustainability, housing
+from modules import cosmology, sustainability, housing, well_production
 
 
 
@@ -13,40 +13,26 @@ def nav_controls(prefix: str) -> List[NavSetArg]:
 
         ui.nav("Cosmology", cosmology.cosmo_ui(id="cosmo")),
         ui.nav("Sustainability", sustainability.co2_ui(id="co2")),
-        #ui.nav("Well Production", tab_c_content()),
+        ui.nav("Well Production", well_production.well_ui(id="well")),
         ui.nav("Housing", housing.house_ui(id="house")),
         #ui.nav("Hospital Care", tab_e_content()),
         #ui.nav("WHO AM I?", tab_f_content()),
 
         ui.nav_spacer(),
-        ui.nav_menu(
-            "Other links",
-            ui.nav_control(
-                ui.a(
-                    "GitHub",
-                    href="https://github.com/anjieliu121",
-                    target="_blank",
-                )
-            ),
-            "----",
-            ui.nav_control(
-                ui.a(
-                    "LinkedIn",
-                    href="https://www.linkedin.com/in/anjie-liu-a73574253/",
-                    target="_blank",
-                )
-            ),
-            "----",
-            "Plain text",
-            "----",
-            ui.nav_control(
-                ui.a(
-                    "RStudio",
-                    href="https://rstudio.com",
-                    target="_blank",
-                )
-            ),
-            align="right",
+
+        ui.nav_control(
+            ui.a(
+                "GitHub",
+                href="https://github.com/anjieliu121",
+                target="_blank",
+            )
+        ),
+        ui.nav_control(
+            ui.a(
+                "LinkedIn",
+                href="https://www.linkedin.com/in/anjie-liu-a73574253/",
+                target="_blank",
+            )
         ),
 
     ]
@@ -88,6 +74,6 @@ def server(input: Inputs, output: Outputs, session: Session):
     cosmology.cosmo_server("cosmo")
     sustainability.co2_server("co2")
     housing.house_server("house")
-
+    well_production.well_server("well")
 
 app = App(app_ui, server)
