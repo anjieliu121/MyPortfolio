@@ -4,7 +4,7 @@ from shiny import App, Inputs, Outputs, Session, reactive, ui
 from shiny.types import NavSetArg
 
 from utils.description import info_modal
-from modules import cosmology, sustainability, housing, well_production
+from modules import cosmology, sustainability, housing, well_production, real_estate
 
 
 
@@ -15,7 +15,7 @@ def nav_controls(prefix: str) -> List[NavSetArg]:
         ui.nav("Sustainability", sustainability.co2_ui(id="co2")),
         ui.nav("Well Production", well_production.well_ui(id="well")),
         ui.nav("Housing", housing.house_ui(id="house")),
-        #ui.nav("Hospital Care", tab_e_content()),
+        ui.nav("Real Estate", real_estate.real_ui(id="real")),
         #ui.nav("WHO AM I?", tab_f_content()),
 
         ui.nav_spacer(),
@@ -75,5 +75,6 @@ def server(input: Inputs, output: Outputs, session: Session):
     sustainability.co2_server("co2")
     housing.house_server("house")
     well_production.well_server("well")
+    real_estate.real_server("real")
 
 app = App(app_ui, server)

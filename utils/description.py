@@ -28,7 +28,7 @@ cosmo_dataset_information = TagList(
         """
         The data comes from the 
         """,
-        tags.a("IllustrisTNG", href=("https://www.tng-project.org")),
+        tags.a("IllustrisTNG", href=("https://www.tng-project.org"), target="_blank"),
         """ project, large-scale cosmological galaxy formation simulations.
         This study uses the TNG300 dataset with a resolution of 1 and a redshift of 0. """,
         style="""
@@ -37,7 +37,7 @@ cosmo_dataset_information = TagList(
         hyphens: auto;
         """,
     ),
-
+    tags.hr(),
     tags.h5("Data Size", style="font-weight: bold;"),
     tags.ul(
             tags.li(
@@ -60,7 +60,7 @@ co2_about_text = TagList(
         """
         This is a 
         """,
-        tags.a("public interactive dashboard", href=("https://anjie-liu.shinyapps.io/sustainability-world-map/")),
+        tags.a("public interactive dashboard", href=("https://anjie-liu.shinyapps.io/sustainability-world-map/"), target="_blank"),
         """
          visualizing the global CO2 emission.
         """,
@@ -78,7 +78,7 @@ co2_dataset_information = TagList(
         """
         The dataset can be found on  
         """,
-        tags.a("Kaggle", href=("https://www.kaggle.com/datasets/ulrikthygepedersen/co2-emissions-by-country")),
+        tags.a("Kaggle", href=("https://www.kaggle.com/datasets/ulrikthygepedersen/co2-emissions-by-country"), target="_blank"),
         """ project, large-scale cosmological galaxy formation simulations.
         """,
         style="""
@@ -114,10 +114,7 @@ house_about_text = TagList(
         """
         This is a 
         """,
-        tags.a("public interactive dashboard", href=("https://racial-disparity-index-tool.streamlit.app/")),tags.a("public interactive dashboard", href=("https://racial-disparity-index-tool.streamlit.app/")),
-        """
-         exploring the individuals' socioeconomic characteristics and their likelihood of homeownership.
-        """,
+        tags.a("public interactive dashboard", href=("https://racial-disparity-index-tool.streamlit.app/")),
         """
          exploring the individuals' socioeconomic characteristics and their likelihood of homeownership.
         """,
@@ -212,6 +209,52 @@ well_dataset_information = TagList(
         word-break:break-word;
         hyphens: auto;
         """,
+    ),
+)
+
+########################################################################################################################
+# Real Estate
+########################################################################################################################
+real_about_text = TagList(
+    tags.br(),
+    tags.br(),
+    tags.h5("About", style="font-weight: bold;"),
+    tags.p(
+        """
+        This is a 
+        """,
+        tags.a("public interactive dashboard", href=("https://anjie-liu.shinyapps.io/Real_Estate/"), target="_blank"),
+        """
+         exploring the real estate data from Houston and Austin large areas dating from 1990 to 2021.
+        """,
+        style="""
+        text-align: left;
+        word-break:break-word;
+        hyphens: auto;
+        """,
+    ),
+)
+
+real_dataset_information = TagList(
+    tags.h5("Data Description", style="font-weight: bold;"),
+    tags.p(
+        """
+        The dataset is scraped from 
+        """,
+        tags.a("Texas Real Estate Research Center at Texas A&M University", href="https://www.recenter.tamu.edu", target="_blank"),
+        style="""
+        text-align: left;
+        word-break:break-word;
+        hyphens: auto;
+        """,
+    ),
+    tags.hr(),
+
+    tags.h5("Data Size", style="font-weight: bold;"),
+    tags.ul(
+        tags.li(
+            tags.p("""32 years * 2 regions * 10 variables"""),
+        ),
     ),
 )
 def info_modal():
