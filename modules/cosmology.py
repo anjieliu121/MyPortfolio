@@ -37,20 +37,29 @@ def cosmo_ui():
             ),
             style="flex: 1; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); margin: 10px;",  # Add margin style
         ),
-        # middle pane
-        ui.tags.div(
-            ui.br(),
-            ui.br(),
-            ui.output_image("profile_img"),
-            style="flex: 3; margin: 30px;",
-        ),
         # right pane
         ui.tags.div(
-            ui.br(),
-            ui.br(),
-            ui.output_image("shap_img"),
-            style="flex: 5; margin: 30px;",
+
+            ui.tags.div(
+
+                ui.output_image("profile_img"),
+                ui.output_image("shap_img"),
+                style="display: flex; justify-content: space-between; margin: 100px;",
+            ),
+
+            ui.tags.div(
+                ui.hr(),
+                ui.h5(
+                    """
+                    Presentation Slides at the Baryon Paster Collaboration Meeting
+                    """,
+                    style="font-weight: bold; center;"),
+                ui.output_ui("pres_pdf"),
+                style="margin: 40px;",
+            ),
         ),
+
+
         style="display: flex;",
     )
 
@@ -77,3 +86,12 @@ def cosmo_server(input: Inputs, output: Outputs, session: Session):
         img: ImgData = {"src": str(dir/"www/cosmology/shap"/(choice+".png")), "width": "450px", "height":"450px"}
         return img
 
+    @output
+    @render.ui
+    def pres_pdf():
+        return ui.tags.iframe(
+            height="500",
+            width="1000",
+            frameborder="no",
+            src="https://drive.google.com/file/d/1udohd8mw7ycA3td2ES1pQ1vhezQ4gnCb/preview",
+        )
