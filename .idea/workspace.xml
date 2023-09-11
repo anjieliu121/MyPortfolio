@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8621c10e-ccbf-41d0-9b26-ef0ec84a701a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/cosmology.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/cosmology.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +129,8 @@
       <workItem from="1694293791010" duration="26322000" />
       <workItem from="1694357915680" duration="8594000" />
       <workItem from="1694367960971" duration="1796000" />
-      <workItem from="1694371536643" duration="14861000" />
+      <workItem from="1694371536643" duration="15750000" />
+      <workItem from="1694449648110" duration="161000" />
     </task>
     <servers />
   </component>
